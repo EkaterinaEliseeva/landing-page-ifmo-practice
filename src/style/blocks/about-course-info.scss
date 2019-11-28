@@ -1,0 +1,10 @@
+.about-course-info {
+  display: none;
+  min-height: 100vh;
+  height: auto;
+
+  ul {
+    @include reset-list;
+    text-align: center;
+  }
+}

@@ -1,0 +1,72 @@
+.main-title {
+  width: 100%;
+  text-align: center;
+  height: calc(100vh - 40px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  //box-shadow: 0 30px 50px -4px rgb(143,129,126);
+
+  &__block {
+    width: 100%;
+    padding: 50px 0 25px 0;
+    //background: linear-gradient(rgba($white, 0), rgba($white, 0.8));
+  }
+
+  &__wrapper {
+  }
+
+  h1 {
+    color: $white;
+    font-size: 44px;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 58px;
+
+    @media (max-width: 800px) {
+      padding: 0 30px;
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+
+  p {
+    color: $igray;
+    font-size: 16px;
+    max-width: 600px;
+    margin: 10px auto 20px auto;
+    //background: linear-gradient(to right, rgba(163,147,147, 0) 26%, rgba(144,132,131, 0.2) 26% 50%, rgba(163,147,147, 0.2) 50% 75%, rgba(163,147,147, 0) 75%);
+
+    @media (max-width: 800px) {
+      max-width: 300px;
+      padding: 0 30px;
+      font-size: 0.7rem;
+    }
+  }
+
+  button {
+    color: $white;
+    background-color: $ired;
+    padding: 12px 50px;
+    border: 1px solid $ired;
+    border-radius: 25px;
+    outline: none;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+
+    @media (max-width: 800px) {
+      padding: 10px 40px;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: darken($ired, 10%);
+      border-color: darken($ired, 10%);
+    }
+
+  }
+
+
+}

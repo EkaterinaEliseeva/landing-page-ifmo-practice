@@ -1,0 +1,94 @@
+.contacts {
+  min-height: calc(100vh - 160px);
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 80px 0;
+
+
+  .container {
+    height: auto;
+    padding: 0 30px;
+    width: calc(100% - 60px);
+  }
+
+  h2 {
+    position: absolute;
+    left: 52%;
+    right: 0;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin: 0;
+    color: $bg-dark;
+
+    @media (max-width: 1000px) {
+      left: 30px;
+      top: 80px;
+    }
+  }
+
+  &__list {
+    @include reset-list;
+    padding-top: 80px;
+    width: 48%;
+
+    @media (max-width: 1000px) {
+      padding-top: 60px;
+      width: 100%;
+      order: 1;
+    }
+  }
+
+  &__item {
+    background: #f7f7f7;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    width: calc(100% - 40px);
+
+    &:nth-child(2n+1) {
+      background: darken(#f7f7f7, 4%);
+    }
+
+    a {
+      display: inline;
+      color: $bg-main;
+      font-weight: 600;
+    }
+  }
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1000px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__map {
+    @media (max-width: 1000px) {
+      width: 100%;
+      order: 2;
+    }
+  }
+
+  iframe {
+    background: url("../img/map.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-width: 450px;
+    width: 100%;
+    min-height: 450px;
+    height: auto;
+
+    @media (max-width: 1000px) {
+      min-width: 260px;
+      min-height: 250px;
+    }
+  }
+}

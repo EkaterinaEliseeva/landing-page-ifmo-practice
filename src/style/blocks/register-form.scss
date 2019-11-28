@@ -1,0 +1,223 @@
+.register-form {
+  min-height: 100vh;
+  height: auto;
+  background: #f7f7f7;
+  padding-bottom: 40px;
+
+  .container {
+    min-height: 100vh;
+    height: auto;
+  }
+
+  h2 {
+    padding: 70px 30px 40px 30px;
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: $bg-dark;
+  }
+
+  form {
+    padding: 40px 100px;
+    background-color: white;
+    border-radius: 20px;
+
+    @media (max-width: 1200px) {
+      padding: 40px 30px;
+    }
+
+    h3 {
+      margin: 0;
+      color: $bg-main;
+      font-size: 1.5rem;
+      width: 300px;
+
+      @media (max-width: 800px) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+
+    @media (max-width: 800px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__section {
+    width: 50%;
+
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+  }
+
+  &__button-wrapper {
+    width: 100%;
+    text-align: center;
+  }
+
+  &__type-list {
+    @include reset-list;
+    padding: 20px 0;
+
+    li {
+      padding: 10px 0;
+      font-size: 14px;
+
+      input[type="radio"] {
+        @include visually-hidden;
+
+        &:focus + label::before {
+          border-color: $bg-main;
+        }
+      }
+
+      input[type="radio"]:checked + label::after {
+        position: absolute;
+        content: "";
+        top: 3px;
+        left: 6px;
+        width: 12px;
+        height: 12px;
+        background-color: #293449;
+        border-radius: 50%;
+      }
+
+      label {
+        padding-left: 34px;
+        position: relative;
+        font-size: 14px;
+        line-height: 20px;
+
+        &::before {
+          position: absolute;
+          content: "";
+          top: -3px;
+          left: 0;
+          width: 20px;
+          height: 20px;
+          border: 2px solid $igray;
+          border-radius: 50%;
+        }
+
+        &:hover {
+          opacity: 0.7;
+        }
+
+      }
+    }
+  }
+
+  &__list {
+    @include reset-list;
+  }
+
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    font-size: 0.9rem;
+
+    label {
+      padding-bottom: 4px;
+    }
+
+    label:not(:last-child) {
+      width: 100%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="phone"] {
+      width: 100%;
+      font-size: 14px;
+      height: 14px;
+      padding: 10px 20px;
+      border-radius: 10px;
+      border: 2px solid $igray;
+      outline: none;
+      color: $bg-main;
+
+    }
+
+    textarea {
+      width: 100%;
+      font-size: 14px;
+      height: 48px;
+      padding: 10px 20px;
+      border-radius: 10px;
+      border: 2px solid $igray;
+      outline: none;
+      resize: none;
+      overflow: hidden;
+      color: $bg-main;
+    }
+
+    &:last-child {
+      display: flex;
+
+      input[type="checkbox"] {
+        @include visually-hidden;
+
+        &:focus + label::before {
+          border-color: $bg-main;
+        }
+      }
+
+      input[type="checkbox"]:checked + label::after {
+        position: absolute;
+        content: "";
+        top: 2px;
+        left: 2px;
+        width: 24px;
+        height: 24px;
+        background: url("../img/check.svg") no-repeat;
+      }
+
+      a {
+        display: inline;
+        color: $bg-main;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+
+      label {
+        padding-left: 40px;
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: "";
+          top: 3px;
+          left: 0;
+          width: 20px;
+          height: 20px;
+          border: 2px solid $igray;
+          border-radius: 4px;
+        }
+
+        &:hover {
+          opacity: 0.7;
+        }
+
+
+      }
+    }
+  }
+
+  button {
+    background: $ired;
+    border-radius: 25px;
+    border: 1px solid $ired;
+    padding: 12px 50px;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    color: $white;
+  }
+}
