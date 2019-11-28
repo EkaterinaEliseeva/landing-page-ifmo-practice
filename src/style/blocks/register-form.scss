@@ -15,7 +15,7 @@
     margin: 0;
     text-align: center;
     text-transform: uppercase;
-    color: $bg-dark;
+    color: $iblue;
   }
 
   form {
@@ -142,6 +142,14 @@
       outline: none;
       color: $bg-main;
 
+      &:hover {
+        opacity: 0.7;
+      }
+
+      &:active, &:focus {
+        border-color: $bg-main;
+      }
+
     }
 
     textarea {
@@ -155,6 +163,14 @@
       resize: none;
       overflow: hidden;
       color: $bg-main;
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      &:active, &:focus {
+        border-color: $bg-main;
+      }
     }
 
     &:last-child {
@@ -219,5 +235,13 @@
     font-size: 0.9rem;
     line-height: 1.2rem;
     color: $white;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: darken($ired, 10%);
+      border-color: darken($ired, 10%);
+    }
+
   }
 }

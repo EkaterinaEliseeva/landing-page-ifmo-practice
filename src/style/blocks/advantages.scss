@@ -2,8 +2,7 @@
   background-color: $white;
   min-height: calc(100vh - 80px);
   height: auto;
-  //background: $bg-main;
-  background: url("../img/photo.jpg");
+  background: darken($igray, 10%) url("../img/photo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 
