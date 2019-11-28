@@ -1,6 +1,6 @@
 .about-course {
   width: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
   height: auto;
   background: #f7f7f7;
   padding: 40px 0;
@@ -8,7 +8,7 @@
   .container {
     display: flex;
     align-items: center;
-    min-height: 100vh;
+    min-height: calc(100vh - 80px);
     height: auto;
   }
 
@@ -44,12 +44,13 @@
 
     @media (max-width: 1200px) {
       margin-left: 0;
-    }
-
-    @media (max-width: 1200px) {
       display: flex;
       width: 100%;
-      margin-bottom: 30px;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+
       padding-bottom: 0;
       align-items: center;
       //justify-content: space-between;

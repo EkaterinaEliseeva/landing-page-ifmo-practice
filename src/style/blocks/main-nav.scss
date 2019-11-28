@@ -1,7 +1,6 @@
 .main-nav {
   position: sticky;
   top: 0;
-  opacity: 0.95;
   z-index: 2;
 
   &__btn {
@@ -85,7 +84,7 @@
       font-size: 0.9rem;
       padding: 12px 0;
       border-bottom: 1px solid rgba(gray, 0);
-      color: $black;
+      color: $bg-dark;
       outline: none;
       position: relative;
 

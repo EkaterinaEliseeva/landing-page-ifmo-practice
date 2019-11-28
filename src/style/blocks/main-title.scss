@@ -15,6 +15,10 @@
   }
 
   &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 
   h1 {
@@ -64,6 +68,33 @@
     &:focus {
       background-color: darken($ired, 10%);
       border-color: darken($ired, 10%);
+    }
+
+  }
+
+  .main-link {
+    transition: border-color 0.3s;
+    position: absolute;
+    bottom: 40px;
+    content: "";
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    border-right: 0.4em solid #e9edf5;
+    border-top: 0.4em solid #e9edf5;
+    border-radius: 0.2em;
+    transform: rotate(135deg);
+    // margin-right: 0.5em;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+      border-color: $iblue;
+    }
+
+    &:active,
+    &:focus {
+      border-color: $iblue;
     }
 
   }

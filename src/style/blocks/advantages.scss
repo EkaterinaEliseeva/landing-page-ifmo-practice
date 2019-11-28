@@ -1,10 +1,13 @@
 .advantages {
   background-color: $white;
-  min-height: calc(100vh - 80px);
   height: auto;
   background: darken($igray, 10%) url("../img/photo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media (max-width: 1200px) {
+    min-height: 0;
+  }
 
 
   &__wrapper {
@@ -14,7 +17,7 @@
 
   &__list {
     @include reset-list;
-    min-height: 100vh;
+    min-height: calc(100vh - 120px);
     height: auto;
     display: flex;
     justify-content: space-between;
@@ -22,6 +25,11 @@
     flex-wrap: wrap;
     max-width: 1000px;
     margin: 0 auto;
+
+    @media (max-width: 1200px) {
+      min-height: 0;
+      margin-top: -30px;
+    }
   }
 
   &__item {
@@ -53,6 +61,7 @@
     @media (max-width: 1200px) {
       width: 40%;
       min-height: 120px;
+      margin-top: 30px;
     }
 
     @media (max-width: 800px) {
@@ -65,9 +74,6 @@
       text-align: center;
       min-height: 100px;
 
-      &:not(:last-child) {
-        margin-bottom: 30px;
-      }
     }
 
     @media (max-width: 500px) {

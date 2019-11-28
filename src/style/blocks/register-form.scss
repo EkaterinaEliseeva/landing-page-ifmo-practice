@@ -1,21 +1,27 @@
 .register-form {
-  min-height: 100vh;
   height: auto;
   background: #f7f7f7;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
+
+  @media (max-width: 1200px) {
+    padding-bottom: 40px;
+  }
 
   .container {
-    min-height: 100vh;
     height: auto;
   }
 
   h2 {
-    padding: 70px 30px 40px 30px;
+    padding: 80px 30px 40px 30px;
     font-size: 2rem;
     margin: 0;
     text-align: center;
     text-transform: uppercase;
     color: $iblue;
+
+    @media (max-width: 1200px) {
+      padding-top: 40px;
+    }
   }
 
   form {
