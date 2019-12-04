@@ -11,6 +11,10 @@
   background-size: cover;
   background-position: center 0;
 
+  @media (max-width: 1000px) {
+    min-height: calc(100vh - 50px);
+  }
+
   &::after {
     position: absolute;
     z-index: 1;

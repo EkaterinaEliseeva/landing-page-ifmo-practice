@@ -68,11 +68,11 @@
       &.open {
         display: block;
         width: 100%;
-        border-bottom: 1px solid darken($igray, 10%);
+        border-bottom: 1px solid $igray;
 
 
         &:first-child {
-          border-top: 1px solid darken($igray, 10%);
+          border-top: 1px solid $igray;
         }
 
         a {
