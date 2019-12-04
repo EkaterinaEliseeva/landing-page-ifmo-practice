@@ -32,6 +32,12 @@
 
     @media (max-width: 550px) {
       padding: 0 30px;
+      font-size: 1.8rem;
+      line-height: 2rem;
+    }
+
+    @media (max-width: 400px) {
+      padding: 0 30px;
       font-size: 1.5rem;
       line-height: 2rem;
       max-width: 260px;
@@ -53,30 +59,6 @@
     @media (max-width: 550px) {
       max-width: 260px;
     }
-  }
-
-  button {
-    color: $white;
-    background-color: $ired;
-    padding: 12px 50px;
-    border: 1px solid $ired;
-    border-radius: 25px;
-    outline: none;
-    font-size: 0.9rem;
-    line-height: 1.2rem;
-    cursor: pointer;
-
-    @media (max-width: 800px) {
-      padding: 10px 40px;
-    }
-
-    &:hover,
-    &:active,
-    &:focus {
-      background-color: darken($ired, 10%);
-      border-color: darken($ired, 10%);
-    }
-
   }
 
   .main-link {

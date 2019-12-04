@@ -6,10 +6,10 @@
   min-height: calc(100vh - 41px);
   width: 100%;
   height: auto;
-  background-image: url('../img/aa.webp');
+  background-image: url('../img/t.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-
+  background-position: center 0;
 
   &::after {
     position: absolute;
@@ -17,7 +17,7 @@
     content: '';
     top: 0;
     left: 0;
-    background: linear-gradient(rgba(#f7f7f7, 1), rgba(#f7f7f7, 0.7), rgba(#f7f7f7, 0.1));
+    background: linear-gradient(rgba(#f7f7f7, 1),rgba(#f7f7f7, 0.7), rgba(#f7f7f7, 0.4), rgba(#f7f7f7, 0.1));
     width: 100%;
     height: 100%;
   }

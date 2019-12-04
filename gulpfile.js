@@ -9,6 +9,7 @@ const autoprefixer = require('autoprefixer');
 const copy = require('gulp-copy');
 var svgstore = require("gulp-svgstore");
 var rename = require("gulp-rename");
+var imagemin= require("gulp-imagemin");
 
     gulp.task("clean", function () {
         return del("build");
@@ -33,6 +34,17 @@ var rename = require("gulp-rename");
 
     gulp.task("img", function () {
         return gulp.src("src/img/*")
+            .pipe(imagemin([
+                imagemin.gifsicle({interlaced: true}),
+                imagemin.jpegtran({progressive: true}),
+                imagemin.optipng({optimizationLevel: 5}),
+                imagemin.svgo({
+                    plugins: [
+                        {removeViewBox: true},
+                        {cleanupIDs: false}
+                    ]
+                })
+            ]))
             .pipe(gulp.dest("build/img"))
     });
 

@@ -40,7 +40,7 @@
                     <p>Профессиональная переподготовка с присвоением квалификации, 650&nbsp;ак.часов</p>
 <!--                    <a href="#main" class="main-link"></a>-->
                 </div>
-                <button type="button">Записаться</button>
+                <button class="button" type="button">Записаться</button>
             </div>
 
         </div>
@@ -51,7 +51,7 @@
             <div class="container">
                 <div class="about-course__list">
                     <div class="about-course__item">
-                        <img src="img/type2.jpg" alt="Форма обучения">
+                        <img src="img/type.jpg" alt="Форма обучения">
                         <div class="about-course__item-wrapper">
                             <h3>ФОРМА ОБУЧЕНИЯ</h3>
                             <div class="about-course__type">
@@ -73,7 +73,7 @@
                         </div>
                     </div>
                     <div class="about-course__item">
-                        <img src="img/diplom.jpg" alt="Диплом">
+                        <img src="img/dipl.jpg" alt="Диплом">
                         <div class="about-course__item-wrapper">
                             <h3>ВЫДАВАЕМЫЙ ДОКУМЕНТ</h3>
                             <p>Диплом о профессиональной переподготовке с присвоением квалификации</p>
@@ -137,7 +137,7 @@
         <section class="about-course-info">
             <div class="container">
                 <ul class="about-course-info__list">
-                    <li class="about-course-info__item">
+                    <li class="about-course-info__item about-course-info__item--annotation">
                         <h2>АННОТАЦИЯ КУРСА</h2>
                         <p>
                             Цель курса веб-программирования: подготовить квалифицированного
@@ -148,11 +148,12 @@
                             Web-приложений. Веб-разработчик — это востребованная и высокооплачиваемая профессия.
                         </p>
                     </li>
-                    <li  class="about-course-info__item">
+                    <li  class="about-course-info__item about-course-info__item--prof">
                         <h2>ПРОФЕССИОНАЛЬНЫЕ СТАНДАРТЫ</h2>
                         <p>
                             Курс соответствует:
-                            <ul>
+                        </p>
+                            <ul class="about-course-info__list-prof">
                                 <li>
                                     профессиональному стандарту 06.035 «Разработчик
                                     Web и мультимедийных приложений» (уровни 4-6)
@@ -165,16 +166,16 @@
                                     профили профессий ИКТ-сектора".
                                 </li>
                             </ul>
-                        </p>
                     </li>
                     <li  class="about-course-info__item">
                         <h2>ПРЕДВАРИТЕЛЬНЫЕ ТРЕБОВАНИЯ</h2>
-                        <ul>
+                        <ul class="about-course-info__list-skills">
                             <li>Знание основ алгоритмизации, программирования, теории БД</li>
                             <li>Владение HTML и CSS</li>
                         </ul>
                     </li>
                 </ul>
+                <a href="http://design.ifmo.ru/" class="button">Перейти на сайт образовательного&nbsp;центра</a>
             </div>
         </section>
         <section class="programm" id="programm">
@@ -188,7 +189,7 @@
                         <li>JAVASCRIPT. ТЕХНОЛОГИИ ПРОФЕССИОНАЛЬНОГО ПРОГРАММИРОВАНИЯ. (130 ЧАСОВ)</li>
                         <li>ИСПОЛЬЗОВАНИЕ JAVASCRIPT-ФРЕЙМВОРКОВ. РЕАКТИВНОЕ ПРОГРАММИРОВАНИЕ (40 ЧАСОВ)</li>
                     </ul>
-                    <a class="programm__button" href="">Подробнее</a>
+                    <a href="https://design.ifmo.ru/courses/web-developer/#programPage" class="programm__button" href="">Подробнее</a>
                 </div>
                 <div class="programm__block">
                     <h3>Технологии backend-разработки</h3>
@@ -197,7 +198,7 @@
                         <li>NODEJS. ТЕХНОЛОГИИ ПРОФЕССИОНАЛЬНОГО ПРОГРАММИРОВАНИЯ (140 ЧАСОВ)</li>
                         <li>PHP И MYSQL (60 ЧАСОВ)</li>
                     </ul>
-                    <a class="programm__button" href="">Подробнее</a>
+                    <a href="https://design.ifmo.ru/courses/web-developer/#programPage" class="programm__button" href="">Подробнее</a>
                 </div>
             </div>
         </section>
@@ -261,7 +262,7 @@
                                     <label for="agreement">
                                         Устанавливая галочку внутри данной формы,
                                         Вы даете
-                                        <a href="#">
+                                        <a href="https://design.ifmo.ru/wp-content/uploads/2018/02/forma.pdf">
                                             согласие на обработку своих персональных данных.
                                         </a>
                                     </label>
@@ -270,7 +271,7 @@
                         </div>
                     </div>
                     <div class="register-form__button-wrapper">
-                        <button type="submit">Отправить</button>
+                        <button class="button" type="submit">Отправить</button>
                     </div>
 
                 </form>
@@ -289,14 +290,14 @@
                             ул.Гастелло, дом 12, каб. 312
                         </li>
                         <li class="contacts__item">
-                            Напишите нам: <a href="#">kpd@corp.ifmo.ru</a>
+                            Напишите нам: <a href="mailto:kpd@corp.ifmo.ru">kpd@corp.ifmo.ru</a>
                         </li>
                         <li class="contacts__item">
                             +7 (812) 373-32-68 с 11 до 17,
                             +7 (960) 275-20-20 с 10 до 19
                         </li>
                         <li class="contacts__item">
-                            Наш сайт: <a href="design.ifmo.ru">design.ifmo.ru</a>
+                            Наш сайт: <a href="https://design.ifmo.ru">design.ifmo.ru</a>
                         </li>
                     </ul>
                 </div>
@@ -309,16 +310,16 @@
                 <p>Присоединяйтесь:</p>
                 <ul class="contacts__social-list">
                     <li class="contacts__social-item">
-                        <a href="">Телеграм</a>
+                        <a href="https://t.me/webdesignitmo">Телеграм</a>
                     </li>
                     <li class="contacts__social-item">
-                        <a href="">Вк</a>
+                        <a href="https://vk.com/ifmodpo">Вконтакте</a>
                     </li>
                     <li class="contacts__social-item">
-                        <a href="">Instagram</a>
+                        <a href="https://www.instagram.com/designifmo/">Instagram</a>
                     </li>
                     <li class="contacts__social-item">
-                        <a href="">Facebook</a>
+                        <a href="https://www.facebook.com/ifmodesign">Facebook</a>
                     </li>
                 </ul>
             </div>

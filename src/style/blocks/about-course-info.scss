@@ -2,6 +2,11 @@
   padding: 80px 0;
   height: auto;
   background-color: #f7f7f7;
+  text-align: center;
+
+  @media (max-width: 1200px) {
+    padding: 40px 0;
+  }
 
   &__list {
     @include reset-list;
@@ -10,14 +15,87 @@
 
   &__item {
     padding: 20px;
-    background: $white;
-    opacity: 0.7;
+    background: rgba($white, 0.7);
     border-radius: 20px;
+    font-size: 0.9rem;
+    color: $black;
+
+    h2 {
+      font-size: 1.2rem;
+      color: $bg-main;
+    }
 
     &:not(:last-child) {
       margin-bottom: 30px;
     }
 
+
+    &--annotation p {
+      text-align: left;
+      padding: 10px;
+
+    }
+
+    &--prof p {
+      text-align: left;
+      padding: 0 8px;
+    }
+  }
+
+
+  &__list-prof {
+    @include reset-list;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    li {
+      position: relative;
+      padding: 10px 10px 10px 40px;
+
+
+      &::before {
+        position: absolute;
+        content: '';
+        top: 14px;
+        left: 5px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: $bg-main;
+      }
+    }
+  }
+
+
+  &__list-skills {
+    @include reset-list;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    li {
+      position: relative;
+      padding: 10px 10px 10px 40px;
+
+
+      &::before {
+        position: absolute;
+        content: '';
+        top: 12px;
+        left: 5px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: $bg-main;
+      }
+    }
+  }
+
+
+  .button {
+    margin: 30px auto 0 auto;
+    display: inline-block;
   }
 
 }

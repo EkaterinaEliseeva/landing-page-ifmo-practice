@@ -235,21 +235,4 @@
     }
   }
 
-  button {
-    background: $ired;
-    border-radius: 25px;
-    border: 1px solid $ired;
-    padding: 12px 50px;
-    font-size: 0.9rem;
-    line-height: 1.2rem;
-    color: $white;
-
-    &:hover,
-    &:active,
-    &:focus {
-      background-color: darken($ired, 10%);
-      border-color: darken($ired, 10%);
-    }
-
-  }
 }
