@@ -10,39 +10,78 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<nav class="main-nav">
+    <button class="main-nav__btn"></button>
+    <img class="logo" src="img/itmo_horiz_white_rus.png" alt="" width="370">
+    <ul class="main-nav__list">
+        <li class="main-nav__item">
+            <a href="#about-course">О курсе</a>
+        </li>
+        <li class="main-nav__item">
+            <a href="#about-course-info">Аннотация</a>
+        </li>
+        <li class="main-nav__item">
+            <a href="#programm">Программа</a>
+        </li>
+        <li class="main-nav__item">
+            <a href="#register-form">Записаться</a>
+        </li>
+        <li class="main-nav__item">
+            <a href="#contacts">Контакты</a>
+        </li>
+    </ul>
+</nav>
     <header class="main-header">
         <div class="main-title">
             <div class="main-title__block">
                 <div class="main-title__wrapper">
-                    <h1>Веб-разработчик От&nbsp;MIDDLE до SENIOR</h1>
-                    <p>Профессиональная переподготовка с присвоением квалификации, 650 ак.часов</p>
-                    <a href="#main" class="main-link"></a>
+
+                    <h1>Веб-разработчик От&nbsp;MIDDLE&nbsp;до&nbsp;SENIOR</h1>
+                    <p>Профессиональная переподготовка с присвоением квалификации, 650&nbsp;ак.часов</p>
+<!--                    <a href="#main" class="main-link"></a>-->
                 </div>
                 <button type="button">Записаться</button>
             </div>
+
         </div>
     </header>
     <main id="main">
-        <nav class="main-nav">
-            <button class="main-nav__btn"></button>
-            <ul class="main-nav__list">
-                <li class="main-nav__item">
-                    <a href="#about-course">О курсе</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="#programm">Программа курса</a>
-                </li>
-                <!--                <li class="main-nav__item">-->
-                <!--                    <a href="">Отзывы</a>-->
-                <!--                </li>-->
-                <li class="main-nav__item">
-                    <a href="#register-form">Записаться</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="#contacts">Контакты</a>
-                </li>
-            </ul>
-        </nav>
+        <section class="about-course" id="about-course">
+            <h2 class="visually-hidden">О курсе</h2>
+            <div class="container">
+                <div class="about-course__list">
+                    <div class="about-course__item">
+                        <img src="img/type2.jpg" alt="Форма обучения">
+                        <div class="about-course__item-wrapper">
+                            <h3>ФОРМА ОБУЧЕНИЯ</h3>
+                            <div class="about-course__type">
+                                <a href="#">Дистанционная</a>
+                                <span>: Ежедневно</span>
+                            </div>
+                            <div class="about-course__type">
+                                <a href="#">Экстернат</a>
+                                <span>: Ежедневно</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-course__item">
+                        <img src="img/calc.jpg" alt="Стоимость обучения">
+                        <div class="about-course__item-wrapper">
+                            <h3>СТОИМОСТЬ ОБУЧЕНИЯ</h3>
+                            <p>Дистанционная форма: 85 000</p>
+                            <p>Экстернат: 42 500</p>
+                        </div>
+                    </div>
+                    <div class="about-course__item">
+                        <img src="img/diplom.jpg" alt="Диплом">
+                        <div class="about-course__item-wrapper">
+                            <h3>ВЫДАВАЕМЫЙ ДОКУМЕНТ</h3>
+                            <p>Диплом о профессиональной переподготовке с присвоением квалификации</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="advantages">
             <div class="advantages__wrapper">
                 <div class="container">
@@ -94,46 +133,11 @@
                 </div>
             </div>
         </section>
-        <section class="about-course" id="about-course">
-            <h2 class="visually-hidden">О курсе</h2>
-            <div class="container">
-                <div class="about-course__list">
-                    <div class="about-course__item">
-                        <img src="img/type2.jpg" alt="Форма обучения">
-                        <div class="about-course__item-wrapper">
-                            <h3>ФОРМА ОБУЧЕНИЯ</h3>
-                            <div class="about-course__type">
-                                <a href="#">Дистанционная</a>
-                                <span>: Ежедневно</span>
-                            </div>
-                            <div class="about-course__type">
-                                <a href="#">Экстернат</a>
-                                <span>: Ежедневно</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-course__item">
-                        <img src="img/calc.jpg" alt="Стоимость обучения">
-                        <div class="about-course__item-wrapper">
-                            <h3>СТОИМОСТЬ ОБУЧЕНИЯ</h3>
-                            <p>Дистанционная форма: 85 000</p>
-                            <p>Экстернат: 42 500</p>
-                        </div>
-                    </div>
-                    <div class="about-course__item">
-                        <img src="img/diplom.jpg" alt="Диплом">
-                        <div class="about-course__item-wrapper">
-                            <h3>ВЫДАВАЕМЫЙ ДОКУМЕНТ</h3>
-                            <p>Диплом о профессиональной переподготовке с присвоением квалификации</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
         <section class="about-course-info">
             <div class="container">
-                <ul>
-                    <li>
+                <ul class="about-course-info__list">
+                    <li class="about-course-info__item">
                         <h2>АННОТАЦИЯ КУРСА</h2>
                         <p>
                             Цель курса веб-программирования: подготовить квалифицированного
@@ -144,7 +148,7 @@
                             Web-приложений. Веб-разработчик — это востребованная и высокооплачиваемая профессия.
                         </p>
                     </li>
-                    <li>
+                    <li  class="about-course-info__item">
                         <h2>ПРОФЕССИОНАЛЬНЫЕ СТАНДАРТЫ</h2>
                         <p>
                             Курс соответствует:
@@ -163,7 +167,7 @@
                             </ul>
                         </p>
                     </li>
-                    <li>
+                    <li  class="about-course-info__item">
                         <h2>ПРЕДВАРИТЕЛЬНЫЕ ТРЕБОВАНИЯ</h2>
                         <ul>
                             <li>Знание основ алгоритмизации, программирования, теории БД</li>

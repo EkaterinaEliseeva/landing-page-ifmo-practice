@@ -1,14 +1,26 @@
 .main-header {
+  position: relative;
+  display: flex;
+  align-items: center;
   margin: 0;
-  padding: 0;
+  min-height: calc(100vh - 41px);
   width: 100%;
-  min-height: 100vh;
   height: auto;
-  border-bottom: 1px solid $igray;
-  background: $bg-main;
-  //background: url("../img/developer.jpg");
-  //background-position: 0 37px;
-  //background-repeat: no-repeat;
-  //background-size: cover;
-  //padding-bottom: 80px;
+  background-image: url('../img/aa.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  &::after {
+    position: absolute;
+    z-index: 1;
+    content: '';
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(#f7f7f7, 1), rgba(#f7f7f7, 0.7), rgba(#f7f7f7, 0.1));
+    width: 100%;
+    height: 100%;
+  }
 }
+
+

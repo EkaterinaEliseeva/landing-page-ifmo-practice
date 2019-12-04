@@ -1,12 +1,25 @@
 .main-nav {
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 3;
+
+
+  .logo {
+    position: absolute;
+    width: 160px;
+    left: 10px;
+
+    @media (max-width: 1000px) {
+      height: 50px;
+      width: auto;
+      left: 20px;
+    }
+  }
 
   &__btn {
     display: none;
 
-    @media (max-width: 800px) {
+    @media (max-width: 1000px) {
       border: none;
       display: block;
       position: absolute;
@@ -33,9 +46,9 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: $igray;
+    background-color: rgba(#f7f7f7, 1);
 
-    @media (max-width: 800px) {
+    @media (max-width: 1000px) {
       height: 50px;
 
       &.open {
@@ -48,8 +61,9 @@
 
   &__item {
 
-    @media (max-width: 800px) {
+    @media (max-width: 1000px) {
       display: none;
+      padding: 0 20px;
 
       &.open {
         display: block;
@@ -62,6 +76,7 @@
         }
 
         a {
+          color: $bg-dark;;
           font-size: 0.9rem;
           line-height: 1rem;
           padding: 17px;

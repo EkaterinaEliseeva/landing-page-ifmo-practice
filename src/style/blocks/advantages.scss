@@ -1,7 +1,7 @@
 .advantages {
-  background-color: $white;
   height: auto;
-  background: darken($igray, 10%) url("../img/photo.jpg");
+  background-color: darken($igray, 10%);
+  background-image: url("../img/photo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 

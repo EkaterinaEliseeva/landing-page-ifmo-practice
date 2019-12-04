@@ -1,10 +1,23 @@
 .about-course-info {
-  display: none;
-  min-height: 100vh;
+  padding: 80px 0;
   height: auto;
+  background-color: #f7f7f7;
 
-  ul {
+  &__list {
     @include reset-list;
     text-align: center;
   }
+
+  &__item {
+    padding: 20px;
+    background: $white;
+    opacity: 0.7;
+    border-radius: 20px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+  }
+
 }

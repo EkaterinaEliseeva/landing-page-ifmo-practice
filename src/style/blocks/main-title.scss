@@ -1,51 +1,57 @@
 .main-title {
-  width: 100%;
+  position: relative;
+  margin: 0 auto;
   text-align: center;
-  height: calc(100vh - 40px);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  //box-shadow: 0 30px 50px -4px rgb(143,129,126);
+  justify-content: start;
 
   &__block {
     width: 100%;
-    padding: 50px 0 25px 0;
-    //background: linear-gradient(rgba($white, 0), rgba($white, 0.8));
+    z-index: 2;
   }
 
   &__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
   }
 
   h1 {
-    color: $white;
+    color: $bg-main;
     font-size: 44px;
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 540px;
+    margin: -10px auto 0 auto;
     line-height: 58px;
+    text-align: center;
 
     @media (max-width: 800px) {
       padding: 0 30px;
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+
+    @media (max-width: 550px) {
+      padding: 0 30px;
       font-size: 1.5rem;
       line-height: 2rem;
+      max-width: 260px;
     }
   }
 
   p {
-    color: $igray;
-    font-size: 16px;
-    max-width: 600px;
+    color: darken($igray, 80%);
+    font-size: 17px;
     margin: 10px auto 20px auto;
-    //background: linear-gradient(to right, rgba(163,147,147, 0) 26%, rgba(144,132,131, 0.2) 26% 50%, rgba(163,147,147, 0.2) 50% 75%, rgba(163,147,147, 0) 75%);
+    width: 410px;
 
     @media (max-width: 800px) {
-      max-width: 300px;
+      max-width: 360px;
       padding: 0 30px;
-      font-size: 0.7rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 550px) {
+      max-width: 260px;
     }
   }
 
@@ -58,6 +64,7 @@
     outline: none;
     font-size: 0.9rem;
     line-height: 1.2rem;
+    cursor: pointer;
 
     @media (max-width: 800px) {
       padding: 10px 40px;
@@ -84,7 +91,6 @@
     border-top: 0.4em solid #e9edf5;
     border-radius: 0.2em;
     transform: rotate(135deg);
-    // margin-right: 0.5em;
     outline: none;
     cursor: pointer;
 

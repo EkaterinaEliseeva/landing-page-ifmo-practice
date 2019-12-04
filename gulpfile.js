@@ -74,7 +74,7 @@ var rename = require("gulp-rename");
 
 
         gulp.watch("src/style/**/*.{scss,sass}", gulp.series("css"));
-        gulp.watch("src/img/*.{png,jpeg,jpg,svg}", gulp.series("img", "refresh"));
+        gulp.watch("src/img/*.{png,jpeg,jpg,svg,webp}", gulp.series("img", "refresh"));
         gulp.watch("src/img/svg/*.svg", gulp.series("svg", "refresh"));
         gulp.watch("src/**/*.html", gulp.series("html", "refresh"));
         gulp.watch("src/js/*.js", gulp.series("js", "refresh"));
