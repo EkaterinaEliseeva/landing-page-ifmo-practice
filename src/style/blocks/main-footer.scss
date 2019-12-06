@@ -27,7 +27,7 @@
     }
   }
 
-  ul {
+  &__social-list {
 
     display: flex;
     @include reset-list;
@@ -35,25 +35,20 @@
     @media (max-width: 600px) {
       flex-wrap: wrap;
     }
+  }
 
-    li {
-      padding: 0 10px;
+  &__social-item {
+    padding: 0 10px;
 
-      @media (max-width: 600px) {
-        width: 100%;
-        text-align: center;
+    a {
+      color: white;
+
+      &:hover {
+        opacity: 0.7;
       }
 
-      a {
-        color: white;
-
-        &:hover {
-          opacity: 0.7;
-        }
-
-        &:active {
-          color: $ired;
-        }
+      &:active {
+        opacity: 0.7;
       }
     }
   }
