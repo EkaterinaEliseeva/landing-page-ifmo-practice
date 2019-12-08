@@ -29,7 +29,7 @@ var imagemin= require("gulp-imagemin");
 
     gulp.task("copy", function () {
         return gulp.src("src/fonts")
-            .pipe(copy("build/fonts"))
+            .pipe(gulp.dest("build/fonts"))
     });
 
     gulp.task("img", function () {
