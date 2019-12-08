@@ -28,7 +28,7 @@ var imagemin= require("gulp-imagemin");
     });
 
     gulp.task("copy", function () {
-        return gulp.src("src/fonts")
+        return gulp.src("src/fonts/*")
             .pipe(gulp.dest("build/fonts"))
     });
 
